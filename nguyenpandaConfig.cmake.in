@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/nguyenpandaTargets.cmake")
+
+# Set include directories for downstream projects
+set(nguyenpanda_INCLUDE_DIRS "@CMAKE_INSTALL_PREFIX@/include")
+
+# Provide a hint for find_package to locate include directories
+set(nguyenpanda_FOUND TRUE)
